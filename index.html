@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Jessica ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+
+body{
+background: radial-gradient(circle at top, #1a0025, #05010a);
+color:white;
+overflow-x:hidden;
+}
+
+canvas{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:1;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+position:relative;
+z-index:2;
+}
+
+h2{font-size:2.6rem;margin-bottom:20px;text-shadow:0 0 20px #ff4da6;}
+
+p{opacity:0.9}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:linear-gradient(45deg,#ff4da6,#ff77ff);
+color:white;
+font-weight:bold;
+margin-top:15px;
+transition:0.3s;
+box-shadow:0 0 15px rgba(255,77,166,0.4);
+}
+
+.btn:hover{transform:scale(1.1);}
+
+.heart{
+position:fixed;
+color:pink;
+font-size:18px;
+animation:float 6s linear infinite;
+z-index:0;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:0;}
+50%{opacity:1;}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+
+.box{
+display:none;
+max-width:850px;
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(12px);
+line-height:1.8;
+animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.reason-box{
+margin-top:20px;
+font-size:1.3rem;
+min-height:60px;
+transition:0.3s;
+}
+
+.gallery{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.gallery img{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,77,166,0.3);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+.typewriter{
+overflow:hidden;
+border-right:.15em solid #ff4da6;
+white-space:nowrap;
+animation:typing 4s steps(40,end), blink .8s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<h2 class="typewriter">Happy Birthday Jessica ❤️</h2>
+<p>9 months and still going strong.</p>
+</section>
+
+<section>
+<h2>💌 A Letter For You</h2>
+<button class="btn" onclick="openLetter()">Open My Heart</button>
+
+<div class="box" id="letter">
+<h3>Jessica ❤️</h3>
+<p>
+If you are reading this, it means I finally put into words something that cannot really fit inside words.<br><br>
+
+Nine months ago, I didn’t know how much one person could change my life. I didn’t know that a single connection could shift the way I think, the way I breathe, the way I see every single day. And then you came in, and slowly, without noise, without force, you became the center of my world.<br><br>
+
+You are not just someone I love. You are the place my mind goes when everything is loud. You are the calm in every storm I don’t talk about. You are the reason ordinary days suddenly feel like something worth remembering.<br><br>
+
+There are things I never say out loud, not because they aren’t real, but because they are too big for normal conversation. Like how I catch myself smiling randomly just thinking about you. Or how every future plan somehow always includes you in it, even when I don’t notice it happening.<br><br>
+
+These past 9 months weren’t perfect, nothing real ever is, but they were ours. And that makes them more valuable than anything perfect could ever be. Every laugh, every small moment, every conversation that went too long at night all of it built something I don’t take for granted.<br><br>
+
+You make me want to be better without even trying. You make me see things differently. You make me care more, feel more, and believe more in things I didn’t believe in before.<br><br>
+
+Sometimes I think about how strange it is that out of everyone in the world, it’s you. It’s you I get to talk to, you I get to care about, you I get to miss when you’re not around. And honestly, I don’t question it anymore I just appreciate it.<br><br>
+
+If I could describe what you are to me, I would say you are my peace and my chaos at the same time. You are my favorite notification, my favorite thought, my favorite silence.<br><br>
+
+I don’t know what the future holds, but I know what I want it to hold. I want more of this. More memories. More random conversations. More moments where we look back and realize how far we’ve come.<br><br>
+
+And today, on your birthday, I just want you to feel how important you are. Not just in words, but in everything behind them.<br><br>
+
+Happy Birthday Jessica ❤️<br><br>
+
+I hope life treats you gently. I hope you get everything you dream about. And I hope, in some way, I get to be part of that journey with you.<br><br>
+
+You mean more to me than I could ever properly explain.<br><br>
+
+And I love you not just in moments, not just in words, but in something consistent that stays even when nothing else does.<br><br>
+
+Forever yours.
+</p>
+</div>
+</section>
+
+<section>
+<h2>📸 Us Together</h2>
+<div class="gallery">
+<img src="img1.jpg" alt="">
+<img src="img2.jpg" alt="">
+<img src="img3.jpg" alt="">
+<img src="img4.jpg" alt="">
+</div>
+</section>
+
+<section>
+<h2>100 Reasons Why I Love You ❤️</h2>
+<button class="btn" onclick="showReason()">Show Reason</button>
+<div class="reason-box" id="reason">Click to see a reason...</div>
+</section>
+
+<script>
+
+function openLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+/* floating hearts */
+setInterval(()=>{
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.fontSize=(10+Math.random()*25)+"px";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+},180);
+
+/* 100 REAL reasons */
+const reasons=[
+"You make every day better",
+"You calm my mind",
+"You understand me without words",
+"You feel like home",
+"You’re my favorite person",
+"You make me laugh naturally",
+"You support me even when I don’t ask",
+"You’re insanely beautiful",
+"You’re my safe place",
+"You inspire me to grow",
+"You never give up on me",
+"You notice the little things",
+"You care in ways no one else does",
+"You make silence comfortable",
+"You’re my best memory",
+"You make life exciting",
+"You accept me as I am",
+"You make me want to be better",
+"You’re my happiness",
+"You’re my peace",
+"You’re my motivation",
+"You make me feel chosen",
+"You’re unforgettable",
+"You’re my favorite thought",
+"You make everything lighter",
+"You’re always in my mind",
+"You make me feel alive",
+"You’re my comfort",
+"You’re my person",
+"You make love feel real",
+"You’re my everything",
+"You make me feel understood",
+"You’re my dream",
+"You make me stronger",
+"You’re my reason to smile",
+"You make me believe in us",
+"You’re my favorite voice",
+"You’re my favorite message",
+"You’re my favorite hello",
+"You’re my hardest goodbye",
+"You’re my constant",
+"You make life meaningful",
+"You’re my heart",
+"You make me feel special",
+"You’re irreplaceable",
+"You’re my world",
+"You make me feel safe",
+"You’re my addiction",
+"You’re my calm",
+"You’re my storm",
+"You’re my truth",
+"You make me feel enough",
+"You’re my future",
+"You’re my past I don’t want to forget",
+"You’re my present",
+"You make everything better",
+"You’re my light",
+"You’re my reason",
+"You’re my love",
+"You’re my always",
+"You make me smile randomly",
+"You’re my thoughts at night",
+"You’re my first choice",
+"You’re my only choice",
+"You’re my luck",
+"You’re my energy",
+"You’re my favorite feeling",
+"You make me emotional",
+"You’re my person forever",
+"You’re my story",
+"You’re my home in human form",
+"You make everything worth it",
+"You’re my destiny",
+"You’re my comfort zone",
+"You’re my chaos and peace",
+"You’re my heart beating",
+"You make me soft",
+"You’re my world center",
+"You’re my focus",
+"You’re my favorite place",
+"You’re my reason to stay",
+"You’re my reason to try",
+"You’re my reason to love",
+"You’re my reason to live better",
+"You’re my everything I didn’t know I needed"
+];
+
+function showReason(){
+let r=reasons[Math.floor(Math.random()*reasons.length)];
+let box=document.getElementById("reason");
+box.style.opacity=0;
+setTimeout(()=>{
+box.innerText=r;
+box.style.opacity=1;
+},200);
+}
+
+</script>
+
+</body>
+</html>
